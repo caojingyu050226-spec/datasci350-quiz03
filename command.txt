@@ -59,3 +59,42 @@ topic without needing assistance from me as a live commentator on air. My attent
 weather updates before engaging in conversation about it further on Air.
 
 It admits that it doesn't know the first time I run it. 
+
+The command "git commit" is used in Git, a distributed version control system. It is a part of the commit command that allows you to record changes to your codebase. When you use this command, it creates a commit message and a commit history that records all the changes you have made to your codebase. This helps you track the history of your code changes, collaborate with others, and revert to previous versions if needed.
+CompletionUsage(completion_tokens=88, prompt_tokens=36, total_tokens=124, completion_tokens_details=None, prompt_tokens_details=PromptTokensDetails(audio_tokens=None, cache_write_tokens=None, cached_tokens=3, image_tokens=None, text_tokens=None))
+
+Git Commit helps you to make changes and push them onto a remote server for collaboration with others on your team or project. It's an essential tool in software development today!
+CompletionUsage(completion_tokens=35, prompt_tokens=110, total_tokens=145, completion_tokens_details=None, prompt_tokens_details=PromptTokensDetails(audio_tokens=None, cache_write_tokens=None, cached_tokens=99, image_tokens=None, text_tokens=None))
+
+It used more tokens because its Modilefile includes additional system instructions and examplar message. 
+
+\{
+  "answer": "I don't know",
+  "confidence":
+length
+Traceback (most recent call last):
+  File "/Users/ericaojy/datasci350-quiz03/ollama/ask_json.py", line 18, in <module>
+    print(json.loads(reply)["answer"])
+          ^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 3 column 16 (char 45)
+
+response_format requests valid JSON, but max_tokens limits how much the model can generate. 
+If the response is cut off before the JSON is complete, which it did, json.loads() will fail because it cannot parse incomplete JSON.
+
+{
+  "answer": "I don't know",
+  "confidence": null
+}
+stop
+I don't know
+
+Because it Modelfile contains additional SYSTEM instructions and MESSAGE examples, which are included in the input alongside the user's question.
+
