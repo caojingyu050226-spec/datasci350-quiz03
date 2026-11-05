@@ -124,7 +124,9 @@ but I still pay for the disk.
 
 I used ChatGPT to help troubleshoot technical issues and clarify commands during the quiz. Specifically:
 
-- I asked to predict the 
-- I asked for help locating and editing my Modelfile in VS Code, correcting the `ollama create` command, and understanding the additional prompt tokens used by my customized model.
+- I asked ChatGPT to explain how to predict a model's size on disk using its parameter count and quantization level. 
+It explained that I should multiply the number of parameters by the bits per weight and divide by 8 to convert bits into bytes.
+- I asked for help locating and editing my Modelfile in VS Code, correcting the `ollama create` command, 
+and understanding the additional prompt tokens used by my customized model.
 - I used ChatGPT for guidance on connecting to AWS through SSH.
 - I asked ChatGPT to explain the difference between stopping and terminating an EC2 instance.
