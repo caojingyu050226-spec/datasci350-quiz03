@@ -29,7 +29,8 @@ Actual size reported by ollama ls: 708 MB
 mkdir -p ollama
 touch ollama/Modelfile
 ollama create commentator -f granite4:350m
-This demand creates nothing because I haven't asked commentator anything yet. 
+This command failed because -f expects a Modelfile path rather than the name of the base model.
+Correct command: ollama create commentator -f ollama/Modelfile
 
 >>> "What does git commit do?"
 Sports Fans! When using Git for version control and collaboration in code development. Each command can modify your project's history with each update created or merged 
@@ -100,6 +101,7 @@ I don't know
 
 Because it Modelfile contains additional SYSTEM instructions and MESSAGE examples, which are included in the input alongside the user's question.
 
+ubuntu@ip-172-31-27-102:~$
 chmod 400 ~/Downloads/ED25519.pem
 ssh -i ~/Downloads/ED25519.pem ubuntu@ec2-52-14-252-166.us-east-2.compute.amazonaws.com
 
