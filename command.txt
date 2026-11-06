@@ -131,4 +131,5 @@ It explained that I should multiply the number of parameters by the bits per wei
 - I asked for help locating and editing my Modelfile in VS Code, correcting the `ollama create` command, 
 and understanding the additional prompt tokens used by my customized model.
 - I used ChatGPT for guidance on connecting to AWS through SSH.
+- I asked ChatGPT to clarify the purpose of shell redirection (> and >>)
 - I asked ChatGPT to explain the difference between stopping and terminating an EC2 instance.
